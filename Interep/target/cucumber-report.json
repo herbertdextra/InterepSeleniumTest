@@ -1,0 +1,105 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8971508347,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User access the Interep Website",
+            "match": {
+              "location": "HomePageStepsTest.userAccessTheInterepWebsite()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2272019481,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "User check the text for option cars",
+        "description": "",
+        "id": "check-the-home-page;user-check-the-text-for-option-cars",
+        "after": [
+          {
+            "result": {
+              "duration": 1398744246,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4398270227,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on Carros",
+            "match": {
+              "location": "HomePageStepsTest.userClickOnMotoG7()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 33516102,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c...deal para sua viagem[12]\u003e but was:\u003c...deal para sua viagem[]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat steps.HomePageStepsTest.userValidateStringCars(HomePageStepsTest.java:24)\n\tat ✽.Then User views \"Encontre o carro ideal para sua viagem12\" on screen Tex of Cars(HomePage.feature:10)\n",
+              "status": "failed"
+            },
+            "output": [
+              "url: https://www.interep.com.br/CarRental"
+            ],
+            "line": 10,
+            "name": "User views \"Encontre o carro ideal para sua viagem12\" on screen Tex of Cars",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Encontre o carro ideal para sua viagem12",
+                  "offset": 12
+                }
+              ],
+              "location": "HomePageStepsTest.userValidateStringCars(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Interep"
+          }
+        ]
+      }
+    ],
+    "name": "Check the Home page",
+    "description": "",
+    "id": "check-the-home-page",
+    "keyword": "Feature",
+    "uri": "HomePage.feature"
+  }
+]
